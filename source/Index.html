@@ -232,20 +232,17 @@
 
 
   <div style="position: relative;">
-    <aside class="sidebar">
-
-    </aside>
-
+    {% include "includes/partials/sidebar.html" %}
 
     {% include "includes/components/pagination.html" %}
     {% include "includes/components/context-menu.html" %}
-    <div class="notice" style="position: absolute; top: 230px; left: 500px;">
+    <div class="notice" style="position: absolute; top: 610px; left: 400px;">
       Заявка успешно подтверждена!
     </div>
-    <div class="notice" style="position: absolute; top: 310px; left: 500px;">
+    <div class="notice" style="position: absolute; top: 690px; left: 400px;">
       Сотрудник {workername} создан, пароль отправлен на почту
     </div>
-    <div class="notice" style="position: absolute; top: 420px; left: 500px;">
+    <div class="notice" style="position: absolute; top: 800px; left: 400px;">
       Сотрудник {workername} создан, пароль отправлен на почту {workermail}
     </div>
   </div>
