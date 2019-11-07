@@ -20,10 +20,9 @@ Array.prototype.forEach.call(inputs, function(input){
 
 let dates = document.querySelectorAll('[data-type="date"]');
 
-for (date of dates) {
+for (const date of dates) {
   IMask(date, {
     mask: Date,
-    pattern: 'd-`m-`Y',
     blocks: {
       d: {
         mask: IMask.MaskedRange,
@@ -42,28 +41,14 @@ for (date of dates) {
       Y: {
         mask: IMask.MaskedRange,
         placeholderChar: 'г',
-        from: 1000,
-        to: 2100,
+        from: 1999,
+        to: 2200,
         maxLength: 4,
       }
     },
-    format: function (date)  {
-      let day = date.getDate();
-      let month = date.getMonth() + 1;
-      let year = date.getFullYear();
 
-      if (day < 10) day = "0" + day;
-      if (month < 10) month = "0" + month;
-
-      return [day, month, year].join('-');
-    },
-    parse: function (str) {
-      let [date, mount, year] = str.split('-');
-      return new Date(date, mount - 1, year);
-    },
-
-    min: new Date(1000, 0, 1),
-    max: new Date(2100, 0, 1),
+    min: new Date(1999, 0, 1),
+    max: new Date(2200, 0, 1),
 
     autofix: true,
     lazy: false,
@@ -73,7 +58,7 @@ for (date of dates) {
 
 let phones = document.querySelectorAll('[type="tel"]');
 
-for(phone of phones){
+for(const phone of phones){
   IMask(phone, {
     mask: '+{7} (000) 000-00-00',
     pattern: '+{7} (000) 000-00-00',
