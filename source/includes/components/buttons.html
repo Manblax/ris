@@ -1,0 +1,129 @@
+<div style="grid-column: span 2">
+  <style>
+
+    .grid-btn {
+      display: grid;
+      grid-auto-flow: column;
+      grid-template-rows: repeat(5, min-content);
+      grid-template-columns: repeat(2, min-content);
+      grid-gap: 20px 40px;
+    }
+
+    .button--primary.hover {
+      background-color: #0055BF;
+      border-color: #0055BF;
+      outline: none;
+    }
+
+    .button--primary.active {
+      background-color: #004AA6;
+      border-color: #004AA6;
+      box-shadow: none;
+    }
+
+    .button--primary.focus {
+      border-color: var(--action-element-color);
+      background-color: var(--action-element-color);
+      box-shadow: 0 0 0 3px rgba(0, 97, 217, 0.5);
+      outline: none;
+    }
+
+    .button--secondary.hover {
+      background-color: #E6F0FC;
+      outline: none;
+    }
+
+    .button--secondary.active {
+      background-color: #CCDCF0;
+      box-shadow: none;
+    }
+
+    .button--secondary.focus {
+      border-color: var(--action-element-color);
+      background-color: var(--main-white);
+      box-shadow: 0 0 0 3px rgba(0, 97, 217, 0.5);
+      outline: none;
+    }
+
+  </style>
+
+  <h2 class="h2 mb16">
+    Кнопки
+  </h2>
+  <div>
+    <h3 class="h3 mb20 ">
+      Большие
+    </h3>
+    <div class="grid-btn mb40">
+      <button class="button button--primary button--lg">
+        Продолжить
+      </button>
+      <button class="button button--primary button--lg hover">
+        Продолжить
+      </button>
+      <button class="button button--primary button--lg active">
+        Продолжить
+      </button>
+      <button class="button button--primary button--lg focus">
+        Продолжить
+      </button>
+      <button class="button button--primary button--lg" disabled="disabled">
+        Продолжить
+      </button>
+      <button class="button button--secondary button--lg">
+        Продолжить
+      </button>
+      <button class="button button--secondary button--lg hover">
+        Продолжить
+      </button>
+      <button class="button button--secondary button--lg active">
+        Продолжить
+      </button>
+      <button class="button button--secondary button--lg focus">
+        Продолжить
+      </button>
+      <button class="button button--secondary button--lg" disabled="disabled">
+        Продолжить
+      </button>
+    </div>
+  </div>
+  <div>
+    <h3 class="h3 mb20">
+      Обычные
+    </h3>
+
+    <div class="grid-btn">
+      <button class="button button--primary">
+        Продолжить
+      </button>
+      <button class="button button--primary hover">
+        Продолжить
+      </button>
+      <button class="button button--primary active">
+        Продолжить
+      </button>
+      <button class="button button--primary focus">
+        Продолжить
+      </button>
+      <button class="button button--primary" disabled="disabled">
+        Продолжить
+      </button>
+      <button class="button button--secondary">
+        Продолжить
+      </button>
+      <button class="button button--secondary hover">
+        Продолжить
+      </button>
+      <button class="button button--secondary active">
+        Продолжить
+      </button>
+      <button class="button button--secondary focus">
+        Продолжить
+      </button>
+      <button class="button button--secondary" disabled="disabled">
+        Продолжить
+      </button>
+    </div>
+  </div>
+</div>
+

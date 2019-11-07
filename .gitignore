@@ -1,0 +1,4 @@
+.gulp/
+.idea/
+build/
+node_modules/

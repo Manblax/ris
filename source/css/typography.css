@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'PT_Russia';
+    src: url('../fonts/PT_RussiaText.woff2') format('woff2'),
+        url('../fonts/PT_RussiaText.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PT_Russia';
+    src: url('../fonts/PTRussiaText-Bold.woff2') format('woff2'),
+        url('../fonts/PTRussiaText-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PT_Russia';
+    src: url('../fonts/PTRussiaText-Black.woff2') format('woff2'),
+        url('../fonts/PTRussiaText-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PT_Russia';
+    src: url('../fonts/PTRussiaText-Medium.woff2') format('woff2'),
+        url('../fonts/PTRussiaText-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+

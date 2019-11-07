@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        name="viewport">
+  <meta content="ie=edge" http-equiv="X-UA-Compatible">
+  <title>Госзакупки</title>
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+<div>
+  <style>
+    .mb40 {
+      margin-bottom: 40px;
+    }
+
+    .mb30 {
+      margin-bottom: 30px;
+    }
+
+    .mb16 {
+      margin-bottom: 16px;
+    }
+
+    .mb20 {
+      margin-bottom: 20px;
+    }
+
+    .typography {
+      padding: 80px;
+      display: grid;
+      grid-gap: 30px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .typography > div > * {
+      margin-bottom: 15px;
+    }
+  </style>
+  <div class="typography">
+    <div>
+      <h1 class="h1">
+        Заголовок первого уровня
+      </h1>
+      <h2 class="h2">
+        Заголовок второго уровная
+      </h2>
+      <h3 class="h3">
+        Заголовок третьего уровня
+      </h3>
+      <h4 class="h4">
+        Заголовок четвертого уровня
+      </h4>
+    </div>
+    <div>
+      <h1 class="h1">
+        Пример текста <br/> в две строки
+      </h1>
+      <h2 class="h2">
+        Пример текста <br/> в две строки
+      </h2>
+      <h3 class="h3">
+        Пример текста <br/> в две строки
+      </h3>
+      <h4 class="h4">
+        Пример текста <br/> в две строки
+      </h4>
+    </div>
+    <div>
+      <div>
+        Основной текст
+      </div>
+      <nav class="nav">
+        Навигация
+      </nav>
+      <div class="caption">
+        Подсказки и пр.
+      </div>
+    </div>
+    <div>
+      <div>
+        Пример текста <br/> в две строки
+      </div>
+      <nav class="nav">
+        Пример текста <br/> в две строки
+      </nav>
+      <div class="caption">
+        Пример текста <br/> в две строки
+      </div>
+    </div>
+  </div>
+
+  {% include "includes/ui_kit/colors.html" %}
+  <style>
+    .grid-components {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 20px;
+      padding: 80px;
+      background-color: var(--light-divider-color);
+    }
+
+    .grid-components > div {
+      padding: 30px;
+      background-color: var(--main-white);
+      border-radius: 5px;
+    }
+  </style>
+
+
+  <div class="grid-components">
+    {% include "includes/components/form-control.html" %}
+    {% include "includes/components/buttons.html" %}
+  </div>
+  <div class="links">
+    <style>
+
+      .links {
+        position: relative;
+        padding: 80px;
+        background-color: var(--main-white);
+        max-width: 900px;
+      }
+
+      .links::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 700px;
+        background-color: var(--main-title-color);
+      }
+
+      .link.hover,
+      .link.active {
+        color: var(--action-text-color);
+        border-bottom: 1px solid var(--action-element-color);
+      }
+
+      .link.focus {
+        color: var(--action-element-color);
+        box-shadow: 0 0 0 3px rgba(0, 97, 217, 0.54);
+        border-color: transparent;
+      }
+
+      .link--style2.focus {
+        color: var(--main-title-color);
+      }
+
+      .link--style3.hover {
+        color: var(--main-text-color);
+        border-color: var(--hint-color);
+      }
+
+      .link--style3.active {
+        color: var(--main-title-color);
+        border-color: var(--hint-color);
+      }
+
+      .link--style3.focus {
+        color: var(--hint-color);
+        border-color: transparent;
+      }
+
+      .list > div {
+        margin-bottom: 20px;
+      }
+
+      .link--inverse {
+        color: var(--main-white);
+      }
+
+      .link--inverse.hover,
+      .link--inverse.active {
+        color: var(--light-divider-color);
+        border-color: var(--divider-color);
+      }
+
+      .link--inverse.focus {
+        color: var(--main-white);
+        box-shadow: 0 0 0 3px #75A9EA;
+      }
+
+    </style>
+    <h2 class="h2 mb20">
+      Ссылки
+    </h2>
+    <div class="links-grid" style="display: grid;
+    grid-template-columns: repeat(5, min-content);
+    grid-gap: 70px;"
+    >
+      <div class="list" style="white-space: nowrap; text-align: right; color: var(--main-title-color);">
+        <div>Обычное состояние</div>
+        <div>Наведение</div>
+        <div>Клик</div>
+        <div>Фокус</div>
+        <div>Неактивный</div>
+      </div>
+      <div class="list">
+        <div><a class="link" href="#">Перейти</a></div>
+        <div><a class="link hover" href="#">Перейти</a></div>
+        <div><a class="link active" href="#">Перейти</a></div>
+        <div><a class="link focus" href="#">Перейти</a></div>
+        <div><a class="link disabled" href="#">Перейти</a></div>
+      </div>
+      <div class="list">
+        <div><a class="link link--style2" href="#">Перейти</a></div>
+        <div><a class="link link--style2 hover" href="#">Перейти</a></div>
+        <div><a class="link link--style2 active" href="#">Перейти</a></div>
+        <div><a class="link link--style2 focus" href="#">Перейти</a></div>
+        <div><a class="link link--style2 disabled" href="#">Перейти</a></div>
+      </div>
+      <div class="list">
+        <div><a class="link link--style3" href="#">Перейти</a></div>
+        <div><a class="link link--style3 hover" href="#">Перейти</a></div>
+        <div><a class="link link--style3 active" href="#">Перейти</a></div>
+        <div><a class="link link--style3 focus" href="#">Перейти</a></div>
+        <div><a class="link link--style3 disabled" href="#">Перейти</a></div>
+      </div>
+      <div class="list" style="position: relative; z-index: 2;">
+        <div><a class="link link--inverse" href="#">Перейти</a></div>
+        <div><a class="link link--inverse hover" href="#">Перейти</a></div>
+        <div><a class="link link--inverse active" href="#">Перейти</a></div>
+        <div><a class="link link--inverse focus" href="#">Перейти</a></div>
+        <div><a class="link link--inverse disabled" href="#">Перейти</a></div>
+      </div>
+    </div>
+  </div>
+
+
+  <div style="position: relative;">
+    <aside class="sidebar">
+
+    </aside>
+
+
+    {% include "includes/components/pagination.html" %}
+    {% include "includes/components/context-menu.html" %}
+    <div class="notice" style="position: absolute; top: 230px; left: 500px;">
+      Заявка успешно подтверждена!
+    </div>
+    <div class="notice" style="position: absolute; top: 310px; left: 500px;">
+      Сотрудник {workername} создан, пароль отправлен на почту
+    </div>
+    <div class="notice" style="position: absolute; top: 420px; left: 500px;">
+      Сотрудник {workername} создан, пароль отправлен на почту {workermail}
+    </div>
+  </div>
+</div>
+
+
+<script src="https://unpkg.com/imask"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
+<style>
+
+
+</style>

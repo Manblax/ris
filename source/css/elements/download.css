@@ -1,0 +1,58 @@
+[type="file"] {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+/*[type="file"] + label {*/
+/*  margin-top: 8px;*/
+/*  padding: 30px;*/
+/*  font-weight: 400;*/
+/*  border: 1px solid var(--border-color);*/
+/*  color: var(--hint-color);*/
+/*  background-color: var(--main-white);*/
+/*  display: flex;*/
+/*  align-items: center;*/
+/*  cursor: pointer;*/
+/*}*/
+
+
+
+/*[type="file"]:focus + label,*/
+/*[type="file"] + label:hover {*/
+/*  background-color: transparent;*/
+/*}*/
+
+[type="file"]:focus + label,
+[type="file"].focus + label {
+  box-shadow: 0 0 0 3px rgba(0, 97, 217, 0.5);
+}
+
+[type="file"] + label * {
+  pointer-events: none;
+}
+
+.inputfile {
+  flex-shrink: 0;
+}
+
+.download {
+  margin-top: 8px;
+  padding: 30px;
+  font-weight: 400;
+  border: 1px solid var(--border-color);
+  color: var(--hint-color);
+  background-color: var(--main-white);
+  display: flex;
+  align-items: center;
+  word-break: break-all;
+}
+
+.download-button {
+  flex-shrink: 0;
+  margin-right: 30px;
+}
+
