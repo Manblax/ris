@@ -1,6 +1,7 @@
 @import 'variables.css';
 @import 'typography.css';
 @import 'main.css';
+@import 'partials/sidebar.css';
 @import 'elements/pagination.css';
 @import 'elements/context-menu.css';
 @import 'elements/button.css';
@@ -8,3 +9,4 @@
 @import 'elements/custom-choice.css';
 @import 'elements/download.css';
 @import 'elements/link.css';
+@import 'elements/image-button.css';
