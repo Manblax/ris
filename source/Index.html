@@ -99,7 +99,6 @@
       grid-template-columns: repeat(4, 1fr);
       grid-gap: 20px;
       padding: 80px;
-      background-color: var(--light-divider-color);
     }
 
     .grid-components > div {
@@ -230,11 +229,28 @@
     </div>
   </div>
 
+  <div>
+    <header class="header">
+      <ul class="user-account">
+        <li class="user-account__item">
+          <div class="user-account__title">
+            Газикумукъ Меджидов Газикумукъ Меджидов
+          </div>
+          <div class="caption user-account__caption">
+            Специалист по контрактно Специалис  Специалис Специалис
+          </div>
+        </li>
+      </ul>
+    </header>
+  </div>
 
   <div style="position: relative;">
     {% include "includes/partials/sidebar.html" %}
 
-    {% include "includes/components/pagination.html" %}
+    <div style="position: absolute; left: 400px; top: 500px;">
+      {% include "includes/components/pagination.html" %}
+    </div>
+
     {% include "includes/components/context-menu.html" %}
     <div class="notice" style="position: absolute; top: 610px; left: 400px;">
       Заявка успешно подтверждена!
