@@ -50,16 +50,16 @@ body {
 }
 
 .dropdown {
+  background-color: var(--main-white);
   box-shadow: 0 8px 20px rgba(2, 11, 34, 0.1),
   0 4px 6px rgba(9, 63, 179, 0.08);
   border-radius: 5px;
   overflow: hidden;
 }
 
-.sidebar {
-  width: 320px;
-  height: 100vh;
-  background-color: #001126;
+.dropdown--filter{
+  min-width: 344px;
+  padding: 0 16px;
 }
 
 .notice {
@@ -79,4 +79,33 @@ body {
 .caption{
   font-size: 0.75rem;
   line-height: 1.5;
+}
+
+.logo {
+  display: block;
+  font-size: 1.25rem;
+  line-height: 1.4;
+  text-decoration: none;
+  color: var(--main-white);
+}
+
+.logo__icon {
+  display: inline-block;
+  width: 36px;
+  height: 37.25px;
+  fill: var(--main-white);
+}
+
+.logo__caption{
+  margin-top: 8px;
+}
+
+.sidebar__button{
+  position: absolute;
+  top: 24px;
+  right: 32px;
+}
+
+.sidebar__button{
+  fill: var(--main-white);
 }
