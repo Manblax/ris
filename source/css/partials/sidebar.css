@@ -1,0 +1,16 @@
+.sidebar {
+  width: 320px;
+  height: 100vh;
+  background-color: #001126;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.sidebar__body {
+  margin-top: 30px;
+}
+
+.sidebar__header {
+  position: relative;
+  padding: 25px 35px;
+}
