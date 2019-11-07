@@ -48,11 +48,16 @@
   background-color: var(--main-white);
   display: flex;
   align-items: center;
-  word-break: break-all;
 }
 
 .download-button {
   flex-shrink: 0;
   margin-right: 30px;
+}
+
+.download > span{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
