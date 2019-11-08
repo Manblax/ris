@@ -1,3 +1,45 @@
+{% set
+  bigButtons = [{
+    classes: 'button button--primary button--lg',
+    disabled: false
+  },
+  {
+    classes: 'button button--primary button--lg hover',
+    disabled: false
+  },
+  {
+    classes: 'button button--primary button--lg active',
+    disabled: false
+  },
+  {
+    classes: 'button button--primary button--lg focus',
+    disabled: false
+  },
+  {
+    classes: 'button button--primary button--lg',
+    disabled: true
+  },
+  {
+    classes: 'button button--secondary button--lg',
+    disabled: false
+  },
+  {
+    classes: 'button button--secondary button--lg hover',
+    disabled: false
+  },
+  {
+    classes: 'button button--secondary button--lg active',
+    disabled: false
+  },
+  {
+    classes: 'button button--secondary button--lg focus',
+    disabled: false
+  },
+  {
+    classes: 'button button--secondary button--lg',
+    disabled: true
+  }]
+%}
 <div style="grid-column: span 2">
   <style>
 
@@ -55,36 +97,16 @@
       Большие
     </h3>
     <div class="grid-btn mb40">
-      <button class="button button--primary button--lg">
-        Продолжить
-      </button>
-      <button class="button button--primary button--lg hover">
-        Продолжить
-      </button>
-      <button class="button button--primary button--lg active">
-        Продолжить
-      </button>
-      <button class="button button--primary button--lg focus">
-        Продолжить
-      </button>
-      <button class="button button--primary button--lg" disabled="disabled">
-        Продолжить
-      </button>
-      <button class="button button--secondary button--lg">
-        Продолжить
-      </button>
-      <button class="button button--secondary button--lg hover">
-        Продолжить
-      </button>
-      <button class="button button--secondary button--lg active">
-        Продолжить
-      </button>
-      <button class="button button--secondary button--lg focus">
-        Продолжить
-      </button>
-      <button class="button button--secondary button--lg" disabled="disabled">
-        Продолжить
-      </button>
+      {% for button in bigButtons %}
+        <button
+          class="{{ button.classes }}"
+          {% if button.disabled %}
+          disabled="disabled"
+          {% endif %}
+        >
+          Продолжить
+        </button>
+      {% endfor %}
     </div>
   </div>
   <div>
